@@ -3,6 +3,10 @@
     display: flex;
     align-items: flex-start;
 }
+nav {
+    position: fixed;
+    top: 0;
+}
 button {
     text-align: center;
     background-color: #ccc;

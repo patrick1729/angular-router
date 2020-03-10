@@ -1,0 +1,13 @@
+<h1>Angular Router</h1>
+<nav>
+    <div class="container">
+        <button routerLink="/crisis-center">Crisis Center</button>
+        <button (click)="navigateToHeroes()">Heroes</button>
+        <button [routerLink]="[{outlets: { secondary: ['team', title, 'user', 123, {disabled: true}] }}]"
+            fragment="another-fragment" [preserveFragment]="true" queryParamsHandling="merge">404</button>
+        <button [routerLink]="['team', title, 'user', 321]" fragment="top-of-world">Fragment</button>
+    </div>
+</nav>
+<div>
+    <router-outlet></router-outlet>
+</div>
