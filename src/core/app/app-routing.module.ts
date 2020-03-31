@@ -22,6 +22,9 @@ const routes: Routes = [
         // scrollPositionRestoration: 'enabled',
         // enableTracing: true,
         // relativeLinkResolution: 'corrected',
+        errorHandler: (error) => {
+            console.log(error);
+        }
     })],
     exports: [RouterModule]
 })

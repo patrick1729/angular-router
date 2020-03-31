@@ -23,16 +23,16 @@ export class HeroListComponent implements OnInit {
         this.getHeroes();
     }
 
-    async onSelect(hero: Hero): Promise<any> {
-        this.selectedHero = hero;
-        const result = await this.router.navigate(['hero-detail'], {
-            queryParams: {
-                id: hero.id,
-                name: hero.name
-            }
-        });
-        console.log(result);
-    }
+    // async onSelect(hero: Hero): Promise<any> {
+    //     this.selectedHero = hero;
+    //     const result = await this.router.navigate(['hero-detail'], {
+    //         queryParams: {
+    //             id: hero.id,
+    //             name: hero.name
+    //         }
+    //     });
+    //     console.log(result);
+    // }
 
     getHeroes(): void {
         this.heroService.getHeroes()
